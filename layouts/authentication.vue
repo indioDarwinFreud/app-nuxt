@@ -1,5 +1,6 @@
 <template>
-    <div>
-        
+    <div class="container">
+        <MenuLogin/>
+        <slot></slot>
     </div>
 </template>
