@@ -9,19 +9,24 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <NuxtLink :to="{ name: 'index' }" class="nav-link" active-class="active">Home</NuxtLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <NuxtLink :to="{ name: 'product' }" class="nav-link" active-class="active">Product</NuxtLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <NuxtLink :to="{ name: 'contacto' }" class="nav-link" active-class="active">Contacto</NuxtLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <NuxtLink :to="{ name: 'login' }" class="nav-link" active-class="active">Login</NuxtLink>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </template>
+<style scoped>
+.active {
+    border-bottom: 2px solid blue;
+}
+</style>
