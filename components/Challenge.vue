@@ -110,68 +110,72 @@
   </script>
   
   <style scoped>
-  .slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    height: 500px;
-    overflow: hidden;
-  }
-  
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
-    min-width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .slide-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .slide-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .slide-title {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: 24px;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  </style>
-  
+/* 🔹 Contenedor principal para centrar el slider */
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; /* ✅ Ocupar toda la pantalla */
+  background-color: black; /* ✅ Fondo negro */
+  overflow: hidden;
+}
+
+/* 🔹 Ajustes para el slider */
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px; /* ✅ Ajuste para mantener tamaño */
+  height: 500px;
+  overflow: hidden;
+}
+
+/* 🔹 Ajustes para imágenes y videos */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🔹 Ajustes para títulos */
+.slide-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* 🔹 Botones de navegación */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+</style>
