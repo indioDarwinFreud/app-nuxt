@@ -1,4 +1,10 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "exclude": [
+    "components/Form.vue",
+    "components/MenuLogin.vue",
+    "components/Menu.vue",
+    "pages"
+  ]
 }
