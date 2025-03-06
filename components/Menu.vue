@@ -20,6 +20,9 @@
                     <li class="nav-item">
                         <NuxtLink :to="{ name: 'login' }" class="nav-link" active-class="active">Login</NuxtLink>
                     </li>
+                    <li class="nav-item">
+                        <NuxtLink :to="{ name: 'challenge' }" class="nav-link" active-class="active">Challenge</NuxtLink>
+                    </li>      
                 </ul>
             </div>
         </div>
