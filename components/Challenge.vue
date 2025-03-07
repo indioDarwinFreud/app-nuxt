@@ -116,6 +116,8 @@ $overlay-bg: rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 
+
+
 /* 🔹 Ajustes para el slider */
 .slider {
   display: flex;
