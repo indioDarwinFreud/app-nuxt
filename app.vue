@@ -21,7 +21,7 @@ const slidesData = [
     title: "Video 1",
     media: {
       type: "video",
-      src: "/multimedia/video.mp4", // 📌 Asegúrate de que el video esté en /public/multimedia/
+      src: "/multimedia/video.mp4", 
       w: "1080",
       h: "1920",
     },

@@ -10,7 +10,7 @@
 export default {
     data() {
         return {
-            slides: [] // Define slides here
+            slides: [] 
         };
     }
 };
